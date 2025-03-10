@@ -50,9 +50,10 @@ e.g.
 
 ### Missing
 Paging and caching not implimented (time contraints) solution returns 100 results.
-Configutation of runtime logging / url paths for brevity
+Configutation of runtime logging / url paths not include for brevity
 
 ### Testing.
 
 I normally prefer component / system style tests rather than mocking out the HTTP calls
-for this type of API. Creating a mock server to use and deploy along side the soluton server.
+for this type of API, this involves creating a mock server to use and deploy along side the soluton server.
+But includes a unit test as requested.
