@@ -6,7 +6,7 @@ import pytest
 async def test_fetch_gists():
 
     user = "octocat"
-    url = f"https://api.github.com/users/{user}/gists"
+    url = f"https://api.github.com/users/{user}/gists?per_page=100"
     expected_response = [{"url": url}]
     expected_status = 200
 
