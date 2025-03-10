@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+WORKDIR /usr/src/app
+COPY requirements-tests.txt .
+RUN pip3 install -r requirements-tests.txt && mkdir /usr/src/app/src /usr/src/app/tests
+
+COPY src/main.py /usr/src/app/src
+COPY tests /usr/src/app/tests
+
+ENTRYPOINT ["pytest"]
